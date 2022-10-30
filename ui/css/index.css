@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';            
+}
+#title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    display: block;
+    background: linear-gradient(to right top, #44a1f8, rgb(129, 120, 190));
+    color: transparent;
+    -webkit-background-clip: text;            
+}
+#container {
+    margin-top: 50px;
+    width: 1000px;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ececec;
+    display: flex;            
+}
+
+.door {
+    width: 300px;
+    margin: 30px;
+    background-color: #fff;
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(206, 200, 200);   
+    transition: 0.3s;
+    cursor: pointer;            
+}
+
+.door:hover {
+    background-color: #44a1f8;
+}
+
+#board {
+    margin-top: 20px;
+    width: 1000px;
+    height: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;            
+}
+.contents {
+    width: 300px;
+    margin: 30px;
+    text-align:  100px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.close {
+    background-image: url('https://i.imgur.com/Bfn4Wlj.jpg');
+}
+
+.pick {
+    border-color: #44a1f8;
+}
+a{text-decoration:none;}
+.wrap{padding:10px;}
+.btn_open{font-weight:bold; width:100px; text-align: center; margin:auto; display:block; padding:10px 15px; background:#fff; color:#44a1f8;font-size: 20px;}
+.btn_close{font-weight:bold; text-align: center; margin:auto;display:block; padding:8px 12px; background:#fff; color:#000;font-size: 15px;}
+.dsc{text-align: left;}
+.pop_wrap{position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.5); font-size:0; text-align:center;}
+.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.pop_wrap .pop_inner{display:inline-block; padding:50px 100px; background:#fff; vertical-align:middle; font-size:20px;}

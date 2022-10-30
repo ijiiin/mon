@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="./ui/css/index.css">    
+    <link rel="stylesheet" href="./chart/css/index.css">    
+    <title>몬티홀</title>
+</head>
+
+<body>
+    <h1 id="title">몬티홀 문제</h1>
+    <div class="wrap">
+        <a href="#pop_info_1" class="btn_open">설명</a>
+        <div id="pop_info_1" class="pop_wrap" style="display:none;">
+          <div class="pop_inner">
+            <pre class="dsc">
+                > 당신은 자동차를 선택해야 하는 퀴즈쇼에 왔습니다.
+
+                3개의 문이 있습니다. 
+                - 2개의 문에는 염소
+                - 1개의 문에는 자동차가 있습니다.
+                
+                > 당신은 하나의 문을 선택했습니다.
+
+                그런데 사회자가 당신이 선택하지 않은 문중 하나를 열어서 염소가 들어있음을 보여주었습니다.
+
+                > 이때 선택한 문을 바꿀 것인가요? 안 바꿀 것인가요?
+            </pre>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="door" data-id="0"></div>
+        <div class="door" data-id="1"></div>
+        <div class="door" data-id="2"></div>
+    </div>
+    <div id="board">
+        <div class="contents">시행 횟수: <span id="totalCnt">0</span></div>
+        <div class="contents">성공 확률: <span id="winRate">0%</span></div>
+        <div class="contents">실패 확률: <span id="loseRate">0%</span></div>
+    </div>
+
+    <canvas id="bar-chart" height="230"></canvas>
+    <style>
+
+    </style>
+    <script src="./demo/ui.js"></script>
+</body>
+</html>
+
+  
