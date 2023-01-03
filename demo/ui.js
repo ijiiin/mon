@@ -4,7 +4,7 @@ const chart = new Chart(document.getElementById("bar-chart"), {
       labels: ["바꾸고 이김", "바꾸고 짐", "유지하고 이김", "유지하고 짐"],
       datasets: [
         {
-          backgroundColor: ["#44a1f8", "#ff6384","#5ed3ac","#f0bd47"],
+          backgroundColor: ["#2a4d69", "#4b86b4","#adcbe3","#63ace5"],
           data: [0,0,0,0]
         }
       ]
